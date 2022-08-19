@@ -33,7 +33,7 @@ ylabel("Amplitude")
 xlabel("Frequency (hz)");
 
 subplot(3, 1, 3);
-spectrogram(signal, hann(256), [], [], sample_freq, "yaxis"); %not giving argument noverlap and f
+spectrogram(signal, hann(128), [], [], sample_freq, "yaxis"); %not giving argument noverlap and f
 title("Spectrogram")
 ylabel("Frequency")
 xlabel("Time (ms)")

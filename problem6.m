@@ -1,4 +1,5 @@
-%Time varient singal alternative between frequency 300hz and 450hz
+%Time varient singal alternative between frequency 300hz and 450hz with
+%impulse
 close all; clc; clear;
 observe_time = 1;
 sample_freq = 1024;
@@ -37,7 +38,7 @@ ylabel("Amplitude")
 xlabel("Frequency (hz)");
 
 subplot(3, 1, 3);
-spectrogram(signal, hann(128), [], [], sample_freq, "yaxis"); %not giving argument noverlap and f
+spectrogram(signal, hann(16), [], [], sample_freq, "yaxis"); %not giving argument noverlap and f
 title("Spectrogram")
 ylabel("Frequency")
 xlabel("Time (ms)")
